@@ -1,8 +1,6 @@
-#*#             # Emacs 临时文件
-*~              # Emacs 临时文件
-*.log           # LaTeX日志文件
-*.out           # LaTeX中间文件
-#*.el            # LaTeX中间文件
+*~     
+*.log 
+*.out 
 *.aux
 *.pdf
 auto/
