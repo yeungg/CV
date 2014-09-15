@@ -5,3 +5,4 @@
 *.el            # LaTeX中间文件
 *.aux
 *.pdf
+auto
