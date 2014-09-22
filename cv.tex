@@ -1,33 +1,42 @@
 %% -*- encoding: utf-8 -*-
 
-\documentclass[11pt,a4paper,nolmodern]{moderncv}
-\usepackage[noindent,UTF8]{ctex}
+\documentclass[unicode,11pt,a4paper,nolmodern]{moderncv}
+%\usepackage[noindent,UTF8]{ctex}
+\usepackage{xltxtra,fontspec,xunicode}
+\usepackage[slantfont,boldfont]{xeCJK} % 允许斜体和粗体
+\usepackage{zhnumber}
+\setCJKmainfont{YouYuan}   % 设置缺省中文字体 徐静蕾字体
+\setCJKmonofont{SimSun}   % 设置等宽字体
+\setmainfont{Garamond} % 英文衬线字体
+\setmonofont{Consolas} % 英文等宽字体
+\setsansfont{Helvetica CE} % 英文无衬线字体
+
 \usepackage{info}
-\usepackage[colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green]{hyperref}
+%\usepackage[colorlinks,linkcolor=red,anchorcolor=blue,citecolor=green]{hyperref}
 
 \title{西北工业大学计算机学院}
 \myquote{自强不息，厚德载物。}{}
+\newcommand\Colorhref[3][cyan]{\href{#2}{\small\color{#1}#3}}
 
 \begin{document}
-\setmainfont{Minion Pro}
-\setsansfont{Myriad Pro}
-
 \hyphenpenalty=10000
 \maketitle
 
 \section{教育背景}
-\tlcventry{2006}{0}{\href{www.nwpu.edu.cn}{西北工业大学（ NPU ）}，
-  \href{http://jsj.nwpu.edu.cn/}{计算机学院}，计算机科学工学博士}{}{}{}
-\tlcventry{1999}{0}{\href{www.nwpu.edu.cn}{西北工业大学（ NPU ）}，
-  \href{http://jsj.nwpu.edu.cn/}{计算机学院}，计算机科学与技术工学硕士}{}{}{}
-\tlcventry{1994}{0}{中国人民解放军第二炮兵工程学院，自动控制系，计算机
-  应用工学学士}{}{}{}
-\begin{itemize}
-  \item 大三学年排名：1/54，GPA：93.8/100
-  \item 全部学期排名：3/54，GPA：90.8/100
-  \item 2011年，清华大学综合优秀奖学金
-  \item 2010年，清华大学综合优秀奖学金
-\end{itemize}}
+\tlcventry{2002}{2006}{\href{www.nwpu.edu.cn}{西北工业大学（NPU)}}{\href{http://jsj.nwpu.edu.cn/}{计算机学院}}{计算机科学工学博士}{}{}
+  
+\tlcventry{1999}{2002}{\href{www.nwpu.edu.cn}{西北工业大学（NPU）}}
+ { \href{http://jsj.nwpu.edu.cn/}{计算机学院}}，{计算机科学与技术工学硕士}{}{}
+
+\tlcventry{1994}{1998}{中国人民解放军第二炮兵工程学院}{自动控制系}{计算机
+  应用工学学士}{}{}
+
+\section{教学}
+\tlcventry{2006}{0}{硕士研究生专业基础课}{分布计算系统原理}{}{}{}
+\tlcventry{2012}{0}{本科专业基础课}{计算机组成原理}{}{}{}
+\tlcventry{2007}{2012}{本科专业基础课}{汇编语言与接口技术}{}{}{}
+\tlcventry{2007}{2009}{本科公共课}{微机原理}{}{}{}
+
 
 \section{能力}
 \subsection{开发}
@@ -110,12 +119,13 @@
 
 \section{语言}
 \cvlanguage{汉语}{母语}{}
-\cvlanguage{英语}{熟练}{通过全国大学英语四级考试，通过清华大学英语水平一考试}
+\cvlanguage{英语}{熟练}{通过``全国外语水平考试（WSK）''}
 
 \section{个人兴趣}
 
 \cvhobby{运动}{游泳}
-\cvhobby{互联网}{\href{https://twitter.com/terro1991}{Twitter}, \href{http://facebook.com/dangfan}{facebook}, \href{http://github.com/terro}{GitHub}, stackoverflow}
+\cvhobby{音乐}{上世纪80年代\textasciitilde{}90年代港台流行歌曲（粤语）}
+\cvhobby{阅读}{中国古典文学，英语文学，历史}
 \cvhobby{其他}{旅游，读书，摄影}
 
 \end{document}
