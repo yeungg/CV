@@ -1,11 +1,12 @@
-all: cv
+all: 
+	xelatex cv
+	biber cv
+	xelatex cv
 
-cv: cv.pdf
+clean: 
+	rm -f *.aux *.log *.out *~ 
+	rm -rf auto/
 
-%.pdf: %.tex
-	xelatex $<
-
-clean:
-	rm -f *.aux *.log *.out
+cleanAll: clean
 	rm -f *.pdf
 
