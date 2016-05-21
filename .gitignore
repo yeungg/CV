@@ -8,3 +8,6 @@
 *.blg
 *.xml
 auto/
+*.log
+
+*.out

@@ -1,17 +1,21 @@
 %% -*- encoding: utf-8 -*-
 
+% arara: xelatex
+% arara: biber
+% arara: xelatex
+
 \documentclass[unicode,11pt,a4paper,nolmodern]{moderncv}
 %\usepackage[noindent,UTF8]{ctex}
 \usepackage{xltxtra,fontspec,xunicode}
 \usepackage[slantfont,boldfont]{xeCJK} % 允许斜体和粗体
-\usepackage{zhnumber}
+%\usepackage{zhnumber}
 \setCJKmainfont{YouYuan}   % 设置缺省中文字体 徐静蕾字体
 \setCJKmonofont{SimSun}   % 设置等宽字体
-\setmainfont{Garamond} % 英文衬线字体
+%\setmainfont{Garamond} % 英文衬线字体
 \setmonofont{Consolas} % 英文等宽字体
 \setsansfont{Helvetica CE} % 英文无衬线字体
 \usepackage{info}
-\usepackage[backend=biber,style=caspervector,utf8,sorting=ecnty]{biblatex}
+\usepackage[backend=biber,style=caspervector, utf8,sorting=ecnty]{biblatex}
 \usepackage{comment}
 \usepackage{wasysym}
 \usepackage{metre}
@@ -55,13 +59,17 @@
 \tldatecventry{2009}{西北工业大学优秀青年教师}{}{}{}{}
 
 \section{教学}
+\tlcventry{2016}{0}{本科专业基础课}{计算机操作系统}{}{}
 \tlcventry{2006}{0}{硕士研究生专业基础课}{分布计算系统原理}{}{}{}
 \tlcventry{2012}{0}{本科专业基础课}{计算机组成原理}{}{}{}
 \tlcventry{2007}{2012}{本科专业基础课}{汇编语言与接口技术}{}{}{}
 \tlcventry{2007}{2009}{本科公共课}{微机原理}{}{}{}
-
+\tlcventry{2016}{0}{本科公共课}{操作系统}{}{}
 \section{科研项目}
 \subsection{正在承担的项目}
+\tlcventry{2016}{2017}{国防基础科研项目}{CPS软件一体化开发技术}{\small\textbf{主持}}{}{}
+\tlcventry{2015}{2016}{陕西省科技计划统筹项目}{应用可定制的CPS支撑平
+  台}{\small\textbf{主持}}{}{}
 \tlcventry{2015}{2018}{自然科学基金面上项目}{基于时空一致的CPS系统行为
   协同建模方法}{\small\textbf{主持}}{}{}
 \tlcventry{2011}{2015}{国防预研课题}{\Asteriscus\,
