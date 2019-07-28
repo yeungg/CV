@@ -11,3 +11,4 @@ auto/
 *.log
 
 *.out
+cv.synctex.gz
