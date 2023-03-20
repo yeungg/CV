@@ -1,4 +1,4 @@
-%% -*- encoding: utf-8 -*-
+%% -*- encoding: utf8 -*-
 
 % arara: xelatex
 % arara: biber
@@ -12,11 +12,11 @@
 
 % \usepackage{zhnumber}
 \setCJKmainfont{YouYuan}   % 设置缺省中文字体 徐静蕾字体
-\setCJKmonofont{SimSun}   % 设置等宽字体
+%\setCJKmonofont{SimSun}   % 设置等宽字体
 %\setmainfont{Garamond} % 英文衬线字体
-\setmonofont{Consolas} % 英文等宽字体
+%\setmonofont{Consolas} % 英文等宽字体
 %\setsansfont{Helvetica CE} % 英文无衬线字体
-\usepackage[backend=biber,style=caspervector, utf8,sorting=ydnt]{biblatex}
+\usepackage[backend=biber,style=caspervector, utf8,sorting=ydnt,seconds=true]{biblatex}
 \usepackage{comment}
 \usepackage{wasysym}
 \usepackage{metre}
@@ -49,6 +49,8 @@
 
 \section{职务}
 \tlcventry{2012}{0}{陕西省嵌入式系统技术重点实验室}{副主任}{}{}{}
+\tlcventry{2019}{0}{陕西省计算机学会嵌入式系统专委会}{副主任}{}{}{}
+\tlcventry{2019}{0}{中国计算机学会智能机器人专业组}{创始委员}{}{}{}
 \tlcventry{2009}{0}{中国计算机学会协同计算专委会}{委员}{}{}{}
 \tlcventry{2013}{0}{中国计算机协会}{高级会员}{}{}{}
 
@@ -69,13 +71,17 @@
 
 \section{科研项目}
 \subsection{正在承担的项目}
+
+\tlcventry{2022}{2025}{自然基金重点项目}{泛在异构资源抽象与管理}{\small\textbf{主持}}{}{}
+\tlcventry{2022}{2025}{军委科技委\Asteriscus\,\Asteriscus\,工程}{面向无\Asteriscus\,\Asteriscus\,\Asteriscus\,\Asteriscus\,\Asteriscus\,\Asteriscus\,研究}{\small\textbf{主持}}{}{}
+
+\subsection{已完成的项目}
+\tlcventry{2019}{2023}{JWKJW重大专项课题}{群体智能操作系统\Asteriscus\,\Asteriscus\,\Asteriscus\,\Asteriscus\,研究}{\small\textbf{主持}}{}{}
 \tlcventry{2017}{2020}{国家重点研发计划课题}{智能无人系统异构资源管理
   与自主协同控制}{\small\textbf{主持}}{}{}
 \tlcventry{2018}{2019}{``十三五''装备预研领域基金一般项目}{信息物理系统融合建模仿真方法}{\small\textbf{主持}}{}{}
 \tlcventry{2019}{2020}{强基工程项目}{软件定义\Asteriscus\,\Asteriscus\,\Asteriscus\,\Asteriscus\,关键技术研究}{\small\textbf{主持}}{}{}
 \tlcventry{2019}{2021}{军委科技委创新项目}{面向无人系统的群体智能评估方法}{\small\textbf{参加}}{}{}
-
-\subsection{已完成的项目}
 \tlcventry{2016}{2017}{国防基础科研项目}{CPS软件\Asteriscus\,\Asteriscus\,\Asteriscus\,\Asteriscus\,开发技术}{\small\textbf{主持}}{}{}
 \tlcventry{2015}{2016}{陕西省科技计划统筹项目}{应用可定制的CPS支撑平
   台}{\small\textbf{主持}}{}{}
@@ -102,27 +108,34 @@
 
 \nocite{*}
 \printbibliography[title={已发表论文}]
-
+\begin{comment}
 \section{指导研究生}
 \subsection{博士研究生}
-\tldatecventry{2014}{学术研究生}{孙远}{}{\small 协助}{}
-\tldatecventry{2014}{学术研究生}{杜雪远}{}{\small 协助}{}
-%%\tldatecventry{2014}{学术研究生}{}{}{\small 协助}{}
+
+\tldatecventry{2014}{学术研究生}{李梦洁}{}{\small 协助}{}
+\tldatecventry{2014}{学术研究生}{孙庆爽}{}{\small 协助}{}
+\tldatecventry{2014}{学术研究生}{胡玉娇}{}{\small 协助}{} 
+\tldatecventry{2014}{学术研究生}{武文亮}{}{\small 协助，已毕业}{}
+\tldatecventry{2014}{学术研究生}{孙远}{}{\small 协助，已毕业}{}
+\tldatecventry{2014}{学术研究生}{杜雪远}{}{\small 协助，已毕业}{}
+%%\tldatecventry{2014}{学术研究生}{}{}{\small 协助，已毕业}{}
 \tldatecventry{2013}{学术研究生}{沈博}{}{\small 协助，已毕业}{}
 \tldatecventry{2012}{学术研究生}{孙中豪，杨亚磊}{}{\small 协助，已毕业}{}
 
 \subsection{硕士研究生}
 %%\todo{补充研究方向及论文题目}
 %% 年度  类型  姓名 状态 论文题目
-\tldatecventry{2018}{学术研究生}{王启，冯冬冬，谢嘉怡(女）}{}{}{}{}{}
-\tldatecventry{2017}{专业研究生}{何晓丽（女），翟开莉(女）}{}{}{}{}{}
-\tldatecventry{2016}{学术研究生}{张冬妮（女）}{\small 已毕业}{}{}{}{}
-\tldatecventry{2015}{学术研究生}{袁艺文}{\small 已毕业}{}{}{}{}
-\tldatecventry{2015}{专业研究生}{廉园园（女）}{\small 已毕业}{}{}{}{}
-\tldatecventry{2014}{学术研究生}{杜庆龙，张鸽（女）}{\small 已毕业}{}{}{}{}
-\tldatecventry{2013}{学术研究生}{杜三盛，张策}{\small 已毕业}{}{}{}{}
-\tldatecventry{2012}{学术研究生}{王严，马雪超}{\small 已毕业（华为）}{}{}{}{}
-\tldatecventry{2011}{学术研究生}{管涛}{\small 已毕业（华为）}{}{}{}{}
+
+\tldatecventry{2021}{学术研究生}{王瑞哲，吴思凯，王岚清(女）}{}{}{}{}{}
+\tldatecventry{2021}{学术研究生}{王启，冯冬冬，谢嘉怡(女）}{}{}{}{}{}
+\tldatecventry{2020}{专业研究生}{何晓丽（女），翟开莉(女）}{}{}{}{}{}
+\tldatecventry{2019}{学术研究生}{张冬妮（女）}{\small 已毕业}{}{}{}{}
+\tldatecventry{2018}{学术研究生}{袁艺文}{\small 已毕业}{}{}{}{}
+\tldatecventry{2018}{专业研究生}{廉园园（女）}{\small 已毕业}{}{}{}{}
+\tldatecventry{2017}{学术研究生}{杜庆龙，张鸽（女）}{\small 已毕业}{}{}{}{}
+\tldatecventry{2016}{学术研究生}{杜三盛，张策}{\small 已毕业}{}{}{}{}
+\tldatecventry{2015}{学术研究生}{王严，马雪超}{\small 已毕业（华为）}{}{}{}{}
+\tldatecventry{2014}{学术研究生}{管涛}{\small 已毕业（华为）}{}{}{}{}
 
 \section{常用工具}
 \cvcomputer{编程语言}{$C/C^{++}$, Java, Python, Assembly}
@@ -138,4 +151,6 @@
 \cvhobby{健身}{游泳}
 \cvhobby{音乐}{上世纪80年代\textasciitilde{}90年代港台流行歌曲（粤语）}
 \cvhobby{阅读}{中国古典文学，英语文学，历史}
+
+\end{comment}
 \end{document}

@@ -11,4 +11,5 @@ auto/
 *.log
 
 *.out
-cv.synctex.gz
+.vscode/
+cv.xdv
